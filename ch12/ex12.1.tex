@@ -1,0 +1,29 @@
+% Box(w=5)
+% Glue(w=9,st=3,sh=1)
+% Box(w=6)
+% Glue(w=9,st=6,sh=2)
+% Box(w=3)
+% Glue(w=12,st=0,sh=0)
+% Box(w=8)
+
+If we want to make the whole horizontal box 100 units wide:
+
+Natural width = 52, target width = 100, diff = 48
+
+Stretch = $3 + 6 + 0 = 9$
+
+Box($w=5$)
+
+Glue($w = 9 + (3/9) \times 48 = 25$)
+
+Box($w=6$)
+
+Glue($w = 9 + (6/9) \times 48 = 41$)
+
+Box($w=3$)
+
+Glue($w = 9 + (0/9) \times 48 = 9$)
+
+Box($w=8$)
+
+\end
